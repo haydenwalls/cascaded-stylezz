@@ -1,3 +1,8 @@
+h1::selection {
+  color: yellow;
+  background-color: black;
+}
+
 section {
   margin-left: auto;
   margin-right: auto;
@@ -30,7 +35,17 @@ section {
 
 
 
+@keyframes flip {
+  from {transform: rotateZ(0deg);}
+  to {transform: rotateZ(359.9deg);}
+}
 
+@keyframes flip2 {
+  from {transform: rotateZ(0deg);}
+  to {transform: rotateZ(359.9deg);}
+  from {background-image: linear-gradient(to bottom right, red, yellow);}
+  to {background-image: linear-gradient(to bottom right, yellow, red);}
+}
 
 .Two {
   animation-duration: 5s;
@@ -75,7 +90,10 @@ animation-duration: 3s;
   animation-direction: reverse; */
 }
 
-
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    100%{background-position:100% 50%}
+}
 
 .Heading:hover {
   font-family: Helvetica;
@@ -89,7 +107,16 @@ animation-duration: 3s;
   padding: 10px;
 }
 
-
+@keyframes example2 {
+    0% {background-color: palegreen;}
+  20% {background-color: palegreen;}
+    30% {background-color: aqua;}
+  50% {background-color: aqua;}
+  60% {background-color: pink;}
+  80% {background-color: pink;}
+  90% {background-color: black;}
+  100% {background-color: palegreen;}
+}
 
 .circle {
   width: 175px;
@@ -141,7 +168,10 @@ animation-duration: 3s;
     opacity: .6;
 }
 
-
+@keyframes spin {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
 
 .box2 {width: 100px;
   height: 100px;
@@ -162,7 +192,10 @@ animation-duration: 3s;
   animation-duration: 4s;
 }
 
-
+@keyframes spin3 {
+  from {transform: rotate(3deg);}
+  to {transform: rotate(363deg);}
+}
 
 .triangle {
   width: 0px;
@@ -272,54 +305,11 @@ animation-duration: 3s;
   animation-timing-function: linear;
 }
 
-
-
-.circle3:hover {
-  background-color: black;
-}
-
-
-
-
-@keyframes flip {
-  from {transform: rotateZ(0deg);}
-  to {transform: rotateZ(359.9deg);}
-}
-
-@keyframes flip2 {
-  from {transform: rotateZ(0deg);}
-  to {transform: rotateZ(359.9deg);}
-  from {background-image: linear-gradient(to bottom right, red, yellow);}
-  to {background-image: linear-gradient(to bottom right, yellow, red);}
-}
-
-@keyframes spin {
-  from {transform: rotate(0deg);}
-  to {transform: rotate(360deg);}
-}
-
 @keyframes spin2 {
   from {transform: rotate(0deg);}
   to {transform: rotate(-360deg);}
 }
 
-@keyframes spin3 {
-  from {transform: rotate(3deg);}
-  to {transform: rotate(363deg);}
-}
-
-@keyframes example2 {
-    0% {background-color: palegreen;}
-  20% {background-color: palegreen;}
-    30% {background-color: aqua;}
-  50% {background-color: aqua;}
-  60% {background-color: pink;}
-  80% {background-color: pink;}
-  90% {background-color: black;}
-  100% {background-color: palegreen;}
-}
-
-@keyframes AnimationName {
-    0%{background-position:0% 50%}
-    100%{background-position:100% 50%}
+.circle3:hover {
+  background-color: black;
 }
