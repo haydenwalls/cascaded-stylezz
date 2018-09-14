@@ -313,3 +313,14 @@ animation-duration: 3s;
 .circle3:hover {
   background-color: black;
 }
+
+.input {
+  position: relative;
+  left: 2.5px;
+  top: -5px;
+  height: 21px;
+}
+
+.form {
+  display: inline;
+}
