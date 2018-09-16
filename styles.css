@@ -4,6 +4,10 @@
   justify-content: center;
 }
 
+body {
+  background-image: linear-gradient(to bottom right, black, white);
+}
+
 section {
   margin-left: auto;
   margin-right: auto;
@@ -362,10 +366,8 @@ animation-duration: 3s;
 }
 
 @keyframes enterright {
-  from {transform: translateX(39em);
-        z-index: 3;};
-  to {transform: translateX(0em);
-      z-index: -1;};
+  from {transform: translateX(39em)};
+  to {transform: translateX(0em)};
 }
 
 .circles {
