@@ -123,6 +123,15 @@ animation-duration: 3s;
   100% {background-color: palegreen;}
 }
 
+.portfolio {
+  position: absolute;
+  top: 40px;
+  right: 120%;
+  z-index: 2;
+  font-size: 3em;
+  opacity: 0;
+}
+
 .circle {
   width: 175px;
   height: 175px;
@@ -151,9 +160,15 @@ animation-duration: 3s;
   animation-timing-function: linear;
 }
 
-.circle:hover {
+.circlep:hover .circle {
   background-color: black;
   opacity: .8;
+}
+
+.circlep:hover .portfolio {
+  opacity: 1;
+  color: white;
+  text-shadow: 0px 0px 3px black;
 }
 
 .box {
@@ -172,6 +187,24 @@ animation-duration: 3s;
     box-shadow:
     2.5px 2px 15px 0px gray;
     opacity: .6;
+}
+
+.diary {
+  position: absolute;
+  top: 160px;
+  right: 150%;
+  z-index: 2;
+  font-size: 3em;
+  opacity: 0;
+  animation-name: enterbottom;
+  animation-duration: 10s;
+  animation-timing-function: ease;
+}
+
+.boxd:hover .diary {
+  opacity: 1;
+  color: white;
+  text-shadow: 0px 0px 100px black;
 }
 
 @keyframes spin {
@@ -196,6 +229,20 @@ animation-duration: 3s;
     22px 30px 28px -5px gray;
   animation-name: spin3;
   animation-duration: 4s;
+}
+
+.myspace {
+  opacity: 0;
+  position: absolute;
+  left: 10px;
+  font-size: 2em;
+  font-style: italic;
+}
+
+.box2:hover .myspace {
+  opacity: 1;
+  color: white;
+  text-shadow: 0px 0px 10px black;
 }
 
 @keyframes spin3 {
@@ -330,8 +377,9 @@ animation-duration: 3s;
   height: 21px;
 }
 
-.form {
+input {
   display: inline;
+  margin-top: 7px;
 }
 
 .shapes2 {

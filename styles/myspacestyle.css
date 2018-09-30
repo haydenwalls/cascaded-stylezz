@@ -1,0 +1,82 @@
+body {
+  background-image: url(../pages/pics/bitch.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-family: Helvetica, Sans-Serif;
+  margin-right: 15px;
+  animation-name: fadein;
+  animation-duration: 10s;
+  animation-timing-function: ease-in;
+  margin-left: 25px;
+}
+
+header h1:hover {
+  color: blue;
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+}
+
+@keyframes fadein {
+  from { color: blue; }
+  to { color: black; }
+}
+
+@keyframes spin {
+  from { transform: rotateZ(0deg); }
+  to { transform: rotateZ(360deg); }
+}
+
+@keyframes fadein3 {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+a {
+    font-family: Helvetica, Sans-Serif;
+    text-decoration: none;
+    color: black;
+    animation-name: fadein2;
+    animation-duration: 7s;
+    animation-timing-function: ease-in;
+}
+
+a:hover {
+  color: blue;
+}
+
+@keyframes fadein2 {
+  from { color: yellow; }
+  to { color: black; }
+}
+
+li {
+  animation-name: fadein3;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+  margin-right: 30px;
+}
+
+article {
+  color: blue;
+  font-family: Helvetica, Sans-Serif;
+  font-size: 6em;
+}
+
+img {
+  display: none;
+}

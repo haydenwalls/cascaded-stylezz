@@ -1,0 +1,85 @@
+.container {
+  /* display: grid;
+  grid-template-rows: 10% 40% 40% 10%;
+  grid-template-columns: 1fr 1fr 1fr; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+header {
+  align-self: center;
+  font-family: Arial, Sans-Serif;
+}
+
+h1 {
+  animation-name: fadein;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+}
+
+h1:hover {
+  color: dodgerblue;
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+}
+
+@keyframes fadein {
+  from { color: dodgerblue; }
+  to { color: black; }
+}
+
+@keyframes spin {
+  from { transform: rotateZ(0deg); }
+  to { transform: rotateZ(360deg); }
+}
+
+img {
+  border: 5px solid white;
+  opacity: 0;
+}
+
+li a:hover img {
+  border: 5px solid yellow;
+  opacity: 1;
+}
+
+ul {
+  display: inline;
+  list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    animation-name: fadein2;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes fadein2 {
+  from { color: red; }
+  to { color: black; }
+}
+
+a:hover {
+  color: red;
+}
+
+a p {
+    font-family: Palatino, Serif;
+    font-style: italic;
+    text-align: right;
+    color: darkslategray;
+    margin-top: -4px;
+    animation-name: fadein3;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein3 {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

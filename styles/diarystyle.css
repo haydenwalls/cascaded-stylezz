@@ -1,0 +1,108 @@
+article {
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
+  font-family: Helvetica, Sans-Serif;
+  margin-right: 15px;
+  animation-name: fadein;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+}
+
+header h1:hover {
+  color: dodgerblue;
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+}
+
+@keyframes fadein {
+  from { color: pink; }
+  to { color: black; }
+}
+
+@keyframes spin {
+  from { transform: rotateZ(0deg); }
+  to { transform: rotateZ(360deg); }
+}
+
+h3 {
+    font-family: Helvetica, Sans-Serif;
+    margin-right: 15px;
+    animation-name: fadein;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+}
+
+p {
+  width: 50%;
+  max-width: 600px;
+  font-family: Palatino, Serif;
+  line-height: 1.5;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+
+li {
+  margin-right: 30px;
+}
+
+a {
+    font-family: Helvetica, Sans-Serif;
+    text-decoration: none;
+    color: black;
+    animation-name: fadein2;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes fadein2 {
+  from { color: dodgerblue; }
+  to { color: black; }
+}
+
+a:hover {
+  color: hotpink;
+}
+
+article p {
+  animation-name: fadein3;
+  animation-duration: 8s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+article h1 {
+  animation-name: fadein3;
+  animation-duration: 3.5s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein3 {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+header li {
+  animation-name: fadein3;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+
+header h1 {
+  margin-left: 25px;
+}
